@@ -1,0 +1,74 @@
+.login-input {
+  text-align: center;
+  display: block;
+  padding: 1vw;
+  margin: 1vw auto;
+  width: 30vw;
+  font-size: 2vw;
+}
+
+.login-logo {
+  max-width: 35vw;
+}
+
+.login-button {
+  font-size: 2vw;
+  display: block;
+  padding: 2vw 3vw;
+  margin: 1vw auto;
+  color: white;
+  background: #66aa9f;
+  border: none;
+  border-radius: 5vw;
+  cursor: pointer;
+  outline: none;
+}
+
+.login-button:hover {
+  box-shadow: 0 0 2vw rgba(0,0,0,0.4);
+}
+
+.login-button:focus {
+  outline: none;
+  background: #4d8c80;
+}
+
+.login-issue {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+}
+
+.login-issue:hover {
+  color: #66aa9f;
+}
+
+.new-user-info {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 40vw;
+  padding: 2vw;
+  border-radius: 2vw;
+  box-shadow: 0 0 3vw rgba(0,0,0,0.4);
+}
+
+.close {
+  border: 0.3vw solid black;
+  width: 2vw;
+  height: 2vw;
+  padding: 0.3vw;
+  border-radius: 3vw;
+  float: right;
+  text-align: center;
+  line-height: 1.6vw;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.close:hover {
+  box-shadow: 0 0 1vw rgba(0,0,0,0.5);
+}

@@ -11,3 +11,18 @@ body{
   font-family: 'Roboto Slab', serif;
   background-color: #ddfcff;
 }
+
+h1 {
+  text-align: center;
+  font-size: 3vw;
+}
+
+footer {
+  position: absolute;
+  bottom: 2vw;
+  left: 30vw;
+  width: 40vw;
+  text-align: center;
+  font-size: 1vw;
+  opacity: 0.5;
+}
