@@ -1,20 +1,19 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Slab');
 
-body{
-  overflow: hidden;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+body {
   font-family: 'Roboto Slab', serif;
-  background-color: #ddfcff;
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
   text-align: center;
-  font-size: 3vw;
+  font-size: 2.6vw;
+  margin: 2vw;
+}
+
+h3 {
+  font-size: 1.7vw;
 }
 
 footer {

@@ -1,0 +1,160 @@
+.home-section {
+  background: #4d8c80;
+  width: 33vw;
+  min-height: 100vw;
+  padding-top: 5vw;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.home-link,
+.recent-group-name {
+  cursor: pointer;
+}
+
+.home-link:hover,
+.recent-group-name:hover {
+  text-decoration-style: dashed;
+  text-decoration: underline;
+}
+
+.recent-materials:after,
+.all-materials:after {
+  content: '';
+  position: absolute;
+  top: 6vw;
+  left: 32.9vw;
+  width: 0; 
+  height: 0; 
+  border-top: 5vw solid transparent;
+  border-bottom: 5vw solid transparent;
+  border-left: 3vw solid #4d8c80;
+}
+
+.all-materials {
+  background: #7dc9bb;
+}
+
+.all-materials:after {
+  border-left: 3vw solid #7dc9bb;
+  left: 65.9vw;
+}
+
+.recent-groups {
+  background: #fff;
+}
+  
+.thumbnail {
+  width: 60%;
+  margin-left: 20%;
+  background: white;
+  height: 13vw;
+  font-size: 1.5vw;
+  margin-top: 10%;
+  cursor: pointer;
+}
+
+.all-material-thumbnail:nth-child(2) {
+  background: #b0b0ff;
+  box-shadow: 1vw -1vw #8383ff, 2vw -2vw #2e2eff;
+}
+
+.all-material-thumbnail:nth-child(3) {
+  background: #ffc5f4;
+  box-shadow: 1vw -1vw #ff83ed, 2vw -2vw #ff29e1;
+}
+
+.all-material-thumbnail:nth-child(4) {
+  background: #c1ff99;
+  box-shadow: 1vw -1vw #91e858, 2vw -2vw #51c605;
+}
+
+.recent-material-img {
+  height: 100%;
+  width: 100%;
+}
+
+.recent-material-name {
+  position: absolute;
+  font-size: 1.5vw;
+  margin: 2vw 1vw;
+  color: white;
+  text-shadow: 0 0 0.3vw #000;
+}
+
+.all-material-name {
+  padding-top: 3vw;
+}
+
+.create-material {
+  width: 50vw;
+  padding-top: 6vw;
+  background: white;
+}
+
+.recent-group-link {
+  text-align: left;
+  width: 70%;
+  margin-left: 15%;
+  padding-left: 5%;
+  border-left: 0.5vw solid #f9d05d;
+  min-height: 3vw;
+}
+
+/*** dropdowns ***/
+
+/*the container must be positioned relative:*/
+.custom-select {
+  display: block;
+  width: 80%;
+  margin: 3vw 10%;
+  outline: none;
+  border-radius: 0.5vw;
+  border: 0;
+  height: 5vw;
+  font-size: 1.5vw;
+  box-sizing: inherit;
+  background: #f9d05d;
+  font-family: 'Roboto Slab', serif;
+}
+
+.custom-select:focus {
+  outline: none;
+}
+
+.custom-select:nth-child(2) {
+  background: #f4a031;
+}
+
+.custom-select:nth-child(3) {
+  background: #f26d33;
+  width: 78%;
+  padding-left: 2%;
+}
+
+.custom-select:nth-child(4) {
+  background: #f23333;
+}
+
+.create-button {
+  font-family: 'Roboto Slab', serif;
+  font-size: 1.5vw;
+  display: block;
+  padding: 2vw 3vw;
+  margin: 1vw auto;
+  background: #ddfcff;
+  border: none;
+  border-radius: 5vw;
+  cursor: pointer;
+  outline: none;
+}
+
+.create-button:hover {
+  box-shadow: 0 0 2vw rgba(0,0,0,0.4);
+}
+
+.create-button:focus {
+  outline: none;
+  background: #b4ede5;
+}

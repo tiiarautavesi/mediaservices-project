@@ -1,3 +1,16 @@
+.login-form {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: #ddfcff;
+  font-family: 'Roboto Slab', serif;
+  margin: 0;
+  padding: 0;
+}
+
 .login-input {
   text-align: center;
   display: block;
@@ -8,7 +21,9 @@
 }
 
 .login-logo {
-  max-width: 35vw;
+  max-width: 30vw;
+  margin: 1vw auto;
+  display: block;
 }
 
 .login-button {
@@ -44,7 +59,6 @@
 }
 
 .new-user-info {
-  display: block;
   position: absolute;
   top: 50%;
   left: 50%;
