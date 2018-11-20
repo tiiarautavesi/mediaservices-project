@@ -1,0 +1,32 @@
+.stats-container {
+  display: block;
+  width: 98vw;
+  margin: 1vw;
+  height: 50vw;
+  box-shadow: 0 0 1vw rgba(0,0,0,0.4);
+  background-color: #ddfcff;
+  border-radius: 2vw;
+  overflow-y: scroll;
+  overflow-x: scroll;
+}
+
+tr {
+  width: 100%;
+}
+
+td, 
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 1vw;
+  width: 20vw;
+  box-sizing: inherit;
+}
+
+td:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.student-name {
+  width: 30vw;
+}

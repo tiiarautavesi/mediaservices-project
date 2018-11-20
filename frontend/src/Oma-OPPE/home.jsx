@@ -9,6 +9,7 @@ import CreateMaterial from './create-material.jsx';
 import RecentGroups from './recent-groups.jsx';
 import SelectedCourse from './selected-course.jsx';
 import Menu from './menu.jsx';
+import CourseStats from './course-stats.jsx';
 
 
 class Home extends React.Component {
@@ -25,7 +26,7 @@ class Home extends React.Component {
       <div className="app">
         <Header />
         <Menu />
-        <SelectedCourse />
+        <CourseStats />
       </div>
     );
   }
