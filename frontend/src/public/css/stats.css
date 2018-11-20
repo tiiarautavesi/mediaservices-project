@@ -12,6 +12,7 @@
 
 tr {
   width: 100%;
+  font-size: 1.1vw;
 }
 
 td, 
@@ -25,8 +26,4 @@ th {
 
 td:nth-child(even) {
   background-color: #dddddd;
-}
-
-.student-name {
-  width: 30vw;
 }

@@ -93,7 +93,7 @@ class CourseStats extends React.Component {
       return (
         <div>
           <tr key={name.sid}>
-            <th className="student-name">{name.name}</th>
+            <td className="student-name">{name.name}</td>
             <td>{name.task1}</td>
             <td>{name.task2}</td>
             <td>{name.task3}</td>
