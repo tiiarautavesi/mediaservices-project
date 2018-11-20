@@ -7,6 +7,8 @@ import RecentMaterial from './recent-material.jsx';
 import AllMaterial from './all-material.jsx';
 import CreateMaterial from './create-material.jsx';
 import RecentGroups from './recent-groups.jsx';
+import SelectedCourse from './selected-course.jsx';
+import Menu from './menu.jsx';
 
 
 class Home extends React.Component {
@@ -22,9 +24,8 @@ class Home extends React.Component {
     return (
       <div className="app">
         <Header />
-        <RecentMaterial />
-        <AllMaterial />
-        <RecentGroups />
+        <Menu />
+        <SelectedCourse />
       </div>
     );
   }

@@ -16,15 +16,15 @@ class RecentGroups extends React.Component {
     
     return (
       <div className="home-section recent-groups">
-        <h3 className="home-link recent-groups-link">Viimeisimmät ryhmät</h3>
+        <h3 className="home-link recent-groups-link">Viimeisimmät kurssit</h3>
         <div className="recent-group-link">
-          <p className="recent-group-name">Group's Name 1</p>
+          <p className="recent-group-name">Course Name 1</p>
         </div>
         <div className="recent-group-link">
-          <p className="recent-group-name">Group's Name 2</p>
+          <p className="recent-group-name">Course Name 2</p>
         </div>
         <div className="recent-group-link">
-          <p className="recent-group-name">Group's Name 3</p>
+          <p className="recent-group-name">Course Name 3</p>
         </div>
         <br />
         <button className="create-button">Näytä kaikki</button>

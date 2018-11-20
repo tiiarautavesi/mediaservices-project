@@ -18,13 +18,13 @@ class AllMaterial extends React.Component {
       <div className="home-section all-materials">
         <h3 className="home-link all-materials-link" onChange={this.handleChange}>Kaikki materiaalit</h3>
         <div className="all-material-thumbnail thumbnail">
-          <p className="all-material-name">Matematiikka</p>
+          <p className="all-material-name">Kansio 1</p>
         </div>
         <div className="all-material-thumbnail thumbnail">
-          <p className="all-material-name">Englanti</p>
+          <p className="all-material-name">Kansio 2</p>
         </div>
         <div className="all-material-thumbnail thumbnail">
-          <p className="all-material-name">Äidinkieli</p>
+          <p className="all-material-name">Kansio 3</p>
         </div>
       </div>
     );

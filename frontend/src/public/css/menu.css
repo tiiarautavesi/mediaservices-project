@@ -1,0 +1,30 @@
+.menu-item {
+  display: inline-block;
+  width: 10vw;
+  font-size: 1vw;
+  margin-top: 5vw;
+  background: #4d8c80;
+  border-radius: 3vw;
+  padding-left: 2vw;
+  padding-right: 3vw;
+  margin-left: -3vw;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 -0.3vw 1vw rgba(0,0,0,0.2);
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+}
+
+.menu-all-materials {
+  background: #7dc9bb;
+}
+
+.menu-courses {
+  background: #ccc;
+}
+
+.menu-course-name {
+  background: #efefef;
+}

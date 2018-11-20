@@ -16,7 +16,7 @@ class RecentMaterial extends React.Component {
     
     return (
       <div className="home-section recent-materials">
-        <h3 className="home-link recent-materials-link">Viimeisimmät materiaalit</h3>
+        <h3 className="home-link recent-materials-link">Viimeisimmät mapat</h3>
         <div className="recent-material-thumbnail thumbnail">
           <p className="recent-material-name">Material's Name 1</p>
           <img className="recent-material-img" src='img/doge.jpg' />
@@ -29,7 +29,7 @@ class RecentMaterial extends React.Component {
           <p className="recent-material-name">Material's Name 3</p>
           <img className="recent-material-img" src='img/https.png' />
         </div>
-        <button className="create-button">Luo uusi</button>
+        <button className="create-button">Luo uusi mapa</button>
       </div>
     );
   }

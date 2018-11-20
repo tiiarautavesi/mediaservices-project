@@ -51,7 +51,7 @@ class Login extends React.Component {
         <form className="login-info" onSubmit={this.handleSubmit}>
           <input name="username" className="login-input" type="text" value={this.state.username} onChange={this.handleChange} />
           <input name="password" className="login-input" type="password" value={this.state.password} onChange={this.handleChange} />
-          <input className="login-button" type="submit" value="Kirjaudu" />
+          <input className="login-button" type="submit" value="Kirjaudu" onClick={() => this.props.action()} />
         </form>
         <a className="login-issue" onClick={this.toggleHidden.bind(this)}>Minulla ei vielä ole tunnuksia OPPE:en</a>
         {this.state.isHidden && <NewUserInfo />}

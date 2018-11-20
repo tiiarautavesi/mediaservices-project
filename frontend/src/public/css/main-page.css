@@ -55,6 +55,14 @@
   cursor: pointer;
 }
 
+.all-material-thumbnail {
+  height: 10vw;
+}
+
+.all-material-thumbnail:hover {
+  text-decoration: underline;
+}
+
 .all-material-thumbnail:nth-child(2) {
   background: #b0b0ff;
   box-shadow: 1vw -1vw #8383ff, 2vw -2vw #2e2eff;
