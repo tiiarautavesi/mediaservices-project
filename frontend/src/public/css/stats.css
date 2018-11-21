@@ -1,13 +1,17 @@
 .stats-container {
   display: block;
-  width: 98vw;
+  width: 94vw;
   margin: 1vw;
   height: 50vw;
   box-shadow: 0 0 1vw rgba(0,0,0,0.4);
   background-color: #ddfcff;
   border-radius: 2vw;
+  padding: 2vw;
   overflow-y: scroll;
   overflow-x: scroll;
+}
+
+.stats-table {
 }
 
 tr {
@@ -17,13 +21,80 @@ tr {
 
 td, 
 th {
-  border: 1px solid #dddddd;
+  border: 0.1vw solid #4d8c80;
   text-align: left;
   padding: 1vw;
-  width: 20vw;
+  width: 10vw;
   box-sizing: inherit;
+  text-align: center;
+  background: rgba(255,255,255,0.3);
 }
 
 td:nth-child(even) {
-  background-color: #dddddd;
+  background-color: #b4ede5;
+}
+
+.student-name {
+  background: #4d8c80;
+  color: white;
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+.student-name:hover {
+  text-decoration: underline;
+}
+
+.stats-title {
+  display: inline-block;
+  font-size: 2vw;
+  margin-top: 0;
+}
+
+.select-stats-scope {
+  display: inline-block;
+  margin-bottom: 1vw;
+  outline: none;
+  border-radius: 0.5vw;
+  border: 0;
+  font-size: 2vw;
+  box-sizing: inherit;
+  background: none;
+  font-family: 'Roboto Slab', serif;
+}
+
+/* weird solution for the color boxes, I don't know how I came up with this.... */
+
+.pass,
+.fail,
+.check {
+  background: #73aa66;
+  border-radius: 1vw;
+  padding: 0.5vw 0;
+  cursor: pointer;
+  color: white;
+}
+
+.fail {
+  background: red;
+}
+
+.check {
+  background: #4d8c80;
+}
+
+.empty {
+  cursor: pointer;
+}
+
+.empty:before {
+  font-family: 'FontAwesome';
+  content: '\f00d';
+  color: red;
+  font-size: 3vw;
+}
+
+.empty:hover:before {
+  color: orange;
+  content: '\f0f3';
 }
