@@ -76,7 +76,7 @@ td:nth-child(even) {
 }
 
 .fail {
-  background: red;
+  background: #ce2020;
 }
 
 .check {
@@ -90,11 +90,36 @@ td:nth-child(even) {
 .empty:before {
   font-family: 'FontAwesome';
   content: '\f00d';
-  color: red;
+  color: #ce2020;
   font-size: 3vw;
 }
 
 .empty:hover:before {
   color: orange;
   content: '\f0f3';
+}
+
+/* stats menu */
+
+.stats-menu {
+  float: right;
+  margin-right: 1vw;
+}
+
+.stats-menu-item {
+  display: inline-block;
+  margin: 0 1vw;
+  padding: 1vw;
+  box-shadow: 0 0 1vw rgba(0,0,0,0.4);
+  background-color: #ddfcff;
+  border-radius: 1vw 1vw 0 0;
+  cursor: pointer;
+}
+
+.stats-menu-item:hover {
+  text-decoration: underline;
+}
+
+.active {
+  z-index: 4;
 }

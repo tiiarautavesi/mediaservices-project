@@ -170,19 +170,26 @@ class CourseStats extends React.Component {
     });
     
     return (
-      <div className="stats-container">
-        <h2 className="stats-title">Kurssi:</h2>
-        <select className="select-stats-scope">
-          <option value="course" defaultValue>Kurssin nimi</option>
-          <option value="folder1">Kansio 1</option>
-          <option value="folder2">Kansio 2</option>
-          <option value="folder3">Kansio 3</option>
-        </select>
-        <table className="stats-table">
-          <tbody>
-          {listStats}
-          </tbody>
-        </table>
+      <div>
+        <div className="stats-menu">
+          <div className="stats-menu-item active">Kurssikohtainen</div>
+          <div className="stats-menu-item">Oppilas kohtainen</div>
+          <div className="stats-menu-item">Mapat</div>
+        </div>
+        <div className="stats-container">
+          <h2 className="stats-title">Kurssi:</h2>
+          <select className="select-stats-scope">
+            <option value="course" defaultValue>Kurssin nimi</option>
+            <option value="folder1">Kansio 1</option>
+            <option value="folder2">Kansio 2</option>
+            <option value="folder3">Kansio 3</option>
+          </select>
+          <table className="stats-table">
+            <tbody>
+            {listStats}
+            </tbody>
+          </table>
+        </div>
       </div>
     );
   }
