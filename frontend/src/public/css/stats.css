@@ -1,7 +1,9 @@
 .stats-container {
   display: block;
+  position: relative;
   width: 94vw;
   margin: 1vw;
+  z-index: 1;
   height: 50vw;
   box-shadow: 0 0 1vw rgba(0,0,0,0.4);
   background-color: #ddfcff;
@@ -67,7 +69,11 @@ td:nth-child(even) {
 
 .pass,
 .fail,
-.check {
+.check,
+.late,
+.ongoing,
+.published,
+.unpublished {
   background: #73aa66;
   border-radius: 1vw;
   padding: 0.5vw 0;
@@ -87,6 +93,24 @@ td:nth-child(even) {
   cursor: pointer;
 }
 
+.late {
+  background: #c15252;
+}
+
+.unpublished {
+  background: #7dc9bb;
+  opacity: 0.4;
+}
+
+.unpublished:hover {
+  opacity: 1;
+}
+
+.published,
+.ongoing {
+  background: #7dc9bb;
+}
+
 .empty:before {
   font-family: 'FontAwesome';
   content: '\f00d';
@@ -102,18 +126,24 @@ td:nth-child(even) {
 /* stats menu */
 
 .stats-menu {
-  float: right;
   margin-right: 1vw;
+  position: absolute;
+  right: 0;
+  top: 6vw;
+  z-index: 0;
 }
 
 .stats-menu-item {
   display: inline-block;
   margin: 0 1vw;
   padding: 1vw;
+  padding-bottom: 3vw;
   box-shadow: 0 0 1vw rgba(0,0,0,0.4);
   background-color: #ddfcff;
   border-radius: 1vw 1vw 0 0;
   cursor: pointer;
+  font-size: 1.1vw;
+  z-index: 0;
 }
 
 .stats-menu-item:hover {
