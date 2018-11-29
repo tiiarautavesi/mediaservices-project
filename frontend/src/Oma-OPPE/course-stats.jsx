@@ -183,9 +183,16 @@ class CourseStats extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      username: ''
+      active1: true,
+      active2: false,
+      active3: false
     };
   }
+  
+  toggleClass() {
+    const currentState = this.state.active1;
+    this.setState({ active1: !currentState });
+  };
   
   render() {
     
@@ -240,9 +247,9 @@ class CourseStats extends React.Component {
     return (
       <div>
         <div className="stats-menu">
-          <div className="stats-menu-item active">Kurssikohtainen</div>
-          <div className="stats-menu-item">Oppilas kohtainen</div>
-          <div className="stats-menu-item">Mapat</div>
+          <div className={this.state.active1 ? 'active stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Kurssikohtainen</div>
+          <div className={this.state.active2 ? 'active stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Oppilas kohtainen</div>
+          <div className={this.state.active3 ? 'active stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Mapat</div>
         </div>
         <div className="stats-container">
           <h2 className="stats-title">Kurssi:</h2>

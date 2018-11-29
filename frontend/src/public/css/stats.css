@@ -14,6 +14,7 @@
 }
 
 .stats-table {
+  border-spacing: 0;
 }
 
 tr {
@@ -126,15 +127,15 @@ td:nth-child(even) {
 /* stats menu */
 
 .stats-menu {
-  margin-right: 1vw;
+  margin-right: 2vw;
   position: absolute;
   right: 0;
   top: 6vw;
-  z-index: 0;
 }
 
 .stats-menu-item {
   display: inline-block;
+  position: relative;
   margin: 0 1vw;
   padding: 1vw;
   padding-bottom: 3vw;
@@ -152,4 +153,16 @@ td:nth-child(even) {
 
 .active {
   z-index: 4;
+}
+
+.active:after {
+  content: '';
+  width: 30vw;
+  height: 4vw;
+  background-color: #ddfcff;
+  display: block;
+  position: absolute;
+  border-radius: 1vw;
+  right: -1vw;
+  top: 3.3vw;
 }
