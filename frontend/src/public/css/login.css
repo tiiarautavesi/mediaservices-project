@@ -70,6 +70,10 @@
   box-shadow: 0 0 3vw rgba(0,0,0,0.4);
 }
 
+.display-none {
+  display: none;
+}
+
 .close {
   border: 0.3vw solid black;
   width: 2vw;
