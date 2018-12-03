@@ -93,6 +93,8 @@
   background: #8282ff;
   border: none;
   cursor: pointer;
+  text-align: center;
+  line-height: 6vw;
 }
 
 .statsButton:after {
@@ -125,6 +127,6 @@
   text-align: center;
 }
 
-.late {
+.late-task {
   background: #c15252;
 }

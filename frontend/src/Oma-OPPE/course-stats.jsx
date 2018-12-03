@@ -2,6 +2,8 @@ import React, {
   Component
 } from 'react';
 import ReactDOM from 'react-dom';
+import Header from './header.jsx';
+import Menu from './menu.jsx';
 
 const studentsList = [
   {
@@ -246,6 +248,8 @@ class CourseStats extends React.Component {
     
     return (
       <div>
+        <Header />
+        <Menu />
         <div className="stats-menu">
           <div className={this.state.active1 ? 'active stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Kurssikohtainen</div>
           <div className={this.state.active2 ? 'active stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Oppilas kohtainen</div>

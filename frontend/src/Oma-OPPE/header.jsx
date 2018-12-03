@@ -2,6 +2,7 @@ import React, {
   Component
 } from 'react';
 import ReactDOM from 'react-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 class Header extends React.Component {
@@ -19,7 +20,9 @@ class Header extends React.Component {
         <header>
           <img className="header-logo" src='img/funtasize-logo-sqr.png' />
           <h2 className="page-title">Oma OPPE</h2>
-          <h2 className="user-name">Tanja Testinen</h2>
+          <h2>
+            <NavLink to="/userinfo" exact className="user-name">Tanja Testinen</NavLink>
+          </h2>
         </header>
         
       </div>

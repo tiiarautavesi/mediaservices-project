@@ -1,0 +1,49 @@
+.settings-page {
+  margin-top: 5vw;
+  padding-left: 2vw;
+}
+
+.settings-logo {
+  display: inline-block;
+  vertical-align: middle;
+  width: 10vw;
+  padding: 2vw;
+}
+
+.settings-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.setting-option {
+  margin-left: 1vw;
+  width: 28vw;
+  padding: 2vw;
+  border-bottom: solid 0.1vw #ccc;
+  cursor: pointer;
+}
+
+.setting-option:hover {
+  text-decoration: underline;
+}
+
+.setting-section {
+  width: 52vw;
+  display: inline-block;
+  border-left: solid 1vw #8282ff;
+  vertical-align: top;
+  min-height: 30vw;
+  padding-left: 3vw;
+}
+
+label {
+  display: block;
+  font-size: 1.1vw;
+  padding-top: 2vw;
+}
+
+.change-password-button {
+  display: block;
+  margin-top: 2vw;
+  cursor: pointer;
+}

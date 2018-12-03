@@ -2,6 +2,10 @@ import React, {
   Component
 } from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
+import Route from 'react-router-dom/Route';
+import Header from './header.jsx';
+import Menu from './menu.jsx';
 
 
 class SelectedCourse extends React.Component {
@@ -16,6 +20,8 @@ class SelectedCourse extends React.Component {
     
     return (
       <div className="selected-course">
+        <Header />
+        <Menu />
         <h3 className="home-link recent-groups-link">Kurssin nimi</h3>
         <div className="folder-selection">
           <div className="visible folder-option">Kansion nimi</div>
@@ -51,14 +57,14 @@ class SelectedCourse extends React.Component {
           </div>
           <div className="visible task-item">
             Tehtävä
-            <div className="taskInfo late">
+            <div className="taskInfo late-task">
               <p className="time">4.11.</p>
               <p className="returns">24/29</p>
             </div>
           </div>
         </div>
         <button className="addItem">+</button>
-        <button className="statsButton"></button>
+        <NavLink to="/coursestats" exact className="statsButton"></NavLink>
       </div>
     );
   }

@@ -25,8 +25,9 @@ class Home extends React.Component {
     return (
       <div className="app">
         <Header />
-        <Menu />
-        <CourseStats />
+        <RecentMaterial />
+        <AllMaterial />
+        <RecentGroups />
       </div>
     );
   }

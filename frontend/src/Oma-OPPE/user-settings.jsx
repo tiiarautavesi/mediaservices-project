@@ -4,6 +4,7 @@ import React, {
 import ReactDOM from 'react-dom';
 import { BrowserRouter as Router, Link, NavLink, Redirect, Prompt} from 'react-router-dom';
 import Route from 'react-router-dom/Route';
+import Header from './header.jsx';
 
 const loginCredentials = [
   {
@@ -17,7 +18,7 @@ const loginCredentials = [
   }
 ];
 
-class Login extends React.Component {
+class UserSettings extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -63,21 +64,33 @@ class Login extends React.Component {
   render() {
     
     return (
-      <div className="login-form">
-        <img className="login-logo" src='img/blinking-logo.gif' />
-        <h1>Kirjaudu sisään</h1>
-        <form className="login-info" onSubmit={this.handleSubmit}>
-          <input name="username" className="login-input" type="text" value={this.state.username} onChange={this.handleChange} />
-          <input name="password" className="login-input" type="password" value={this.state.password} onChange={this.handleChange} />
-          
-          <NavLink to="/home" exact  className="login-button">Kirjaudu</NavLink>
-        </form>
-        <a className="login-issue" onClick={this.showModal}>
-          Minulla ei vielä ole tunnuksia OPPE:en
-        </a>
-        <NewUserInfo show={this.state.show} handleClose={this.hideModal} />
-        {console.log(this.state.show)}
-        
+      <div className="settings-page">
+        <Header />
+        <img className="settings-logo" src='img/blinking-logo.gif' />
+        <h2 className="settings-title">Omat asetuksesi</h2>
+        <h3 className="home-link recent-groups-link"></h3>
+        <div className="folder-selection">
+          <div className="setting-option selected">Vaihda salasana</div>
+          <div className="setting-option">Opetus asteen asetukset</div>
+          <div className="setting-option">Omat ryhmät</div>
+          <div className="setting-option">Laskutustiedot</div>
+          <div className="setting-option">Kansion nimi</div>
+        </div>
+        <div className="setting-section">
+          <h3>Vaihda salasanasi.</h3>
+          <p>Valitse salasana, joka sisältää ainankin yhden kirjaimen, numeron sekä erikoismerkin. Salasanan on oltava 8 merkkiä pitkä.</p>
+          <form className="login-info" onSubmit={this.handleSubmit}>
+            <label>Vanha salasana</label>
+            <input name="password" className="settings-input" type="password" value={this.state.password} onChange={this.handleChange} />
+            <label>Uusi salasana</label>
+            <input name="password" className="settings-input" type="password" value={this.state.password} onChange={this.handleChange} />
+            <label>Uusi salasana uudestaan</label>
+            <input name="password" className="settings-input" type="password" value={this.state.password} onChange={this.handleChange} />
+
+            <button className="change-password-button">Vaihda salasana</button>
+          </form>
+        </div>
+        <button className="addItem">+</button>
       </div>
     )
   }
@@ -96,4 +109,4 @@ const NewUserInfo = ({handleClose, show}) => {
   );
 }
 
-export default Login;
+export default UserSettings;

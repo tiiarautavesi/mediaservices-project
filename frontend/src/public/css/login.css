@@ -37,6 +37,8 @@
   border-radius: 5vw;
   cursor: pointer;
   outline: none;
+  text-align: center;
+  width: 30vw;
 }
 
 .login-button:hover {
