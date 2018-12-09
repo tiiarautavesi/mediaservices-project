@@ -6,7 +6,9 @@ import Login from './login.jsx';
 import Home from './Oma-OPPE/home.jsx';
 import CourseStats from './Oma-OPPE/course-stats.jsx';
 import SelectedCourse from './Oma-OPPE/selected-course.jsx';
-import UserSettings from './Oma-OPPE/user-settings.jsx'
+import UserSettings from './Oma-OPPE/user-settings.jsx';
+import AllMaterial from './Oma-OPPE/all-material-full.jsx';
+import AllCourses from './Oma-OPPE/all-courses.jsx'
 
 
 
@@ -41,8 +43,15 @@ class App extends React.Component {
           <Route path="/usersettings" exact strict render={()=>(
             <UserSettings />
           )}/>
+          
+          <Route path="/all-material" exact strict render={()=>(
+            <AllMaterial />
+          )}/>
+          
+          <Route path="/all-courses" exact strict render={()=>(
+            <AllCourses />
+          )}/>
 
-          <footer>&#169; 2018 Tiia Rautavesi</footer>
         </div>
       </Router>
     );

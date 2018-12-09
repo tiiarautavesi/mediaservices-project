@@ -19,9 +19,13 @@ class Header extends React.Component {
       <div className="header">
         <header>
           <img className="header-logo" src='img/funtasize-logo-sqr.png' />
-          <h2 className="page-title">Oma OPPE</h2>
+          
+          <h2 className="page-title">
+            <NavLink to="/home" exact>Oma OPPE</NavLink>
+          </h2>
+          
           <h2>
-            <NavLink to="/userinfo" exact className="user-name">Tanja Testinen</NavLink>
+            <NavLink to="/usersettings" exact className="user-name">Tanja Testinen</NavLink>
           </h2>
         </header>
         

@@ -251,11 +251,12 @@ class CourseStats extends React.Component {
         <Header />
         <Menu />
         <div className="stats-menu">
-          <div className={this.state.active1 ? 'active stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Kurssikohtainen</div>
-          <div className={this.state.active2 ? 'active stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Oppilas kohtainen</div>
-          <div className={this.state.active3 ? 'active stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Mapat</div>
+          <div className={this.state.active1 ? 'active-item stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Kurssikohtainen</div>
+          <div className={this.state.active2 ? 'active-item stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Oppilaskohtainen</div>
+          <div className={this.state.active3 ? 'active-item stats-menu-item': 'stats-menu-item'} onClick={this.toggleClass}>Mapat</div>
         </div>
-        <div className="stats-container">
+        
+        <div className="title-bar">
           <h2 className="stats-title">Kurssi:</h2>
           <select className="select-stats-scope">
             <option value="course" defaultValue>Kurssin nimi</option>
@@ -263,9 +264,12 @@ class CourseStats extends React.Component {
             <option value="folder2">Kansio 2</option>
             <option value="folder3">Kansio 3</option>
           </select>
+        </div>
+        
+        <div className="stats-container">
           <table className="stats-table">
             <tbody>
-            {listStats}
+            {this.state.active1 && listStats}
             </tbody>
           </table>
         </div>

@@ -2,6 +2,7 @@ import React, {
   Component
 } from 'react';
 import ReactDOM from 'react-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 
 class RecentGroups extends React.Component {
@@ -18,16 +19,16 @@ class RecentGroups extends React.Component {
       <div className="home-section recent-groups">
         <h3 className="home-link recent-groups-link">Viimeisimmät kurssit</h3>
         <div className="recent-group-link">
-          <p className="recent-group-name">Course Name 1</p>
+          <NavLink to="/course" exact className="recent-group-name">Course Name 1</NavLink>
         </div>
         <div className="recent-group-link">
-          <p className="recent-group-name">Course Name 2</p>
+          <NavLink to="/course" exact className="recent-group-name">Course Name 2</NavLink>
         </div>
         <div className="recent-group-link">
-          <p className="recent-group-name">Course Name 3</p>
+          <NavLink to="/course" exact className="recent-group-name">Course Name 3</NavLink>
         </div>
         <br />
-        <button className="create-button">Näytä kaikki</button>
+        <button className="create-button">Luo uusi kurssi</button>
       </div>
     );
   }

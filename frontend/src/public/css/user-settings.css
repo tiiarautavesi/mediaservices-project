@@ -43,7 +43,24 @@ label {
 }
 
 .change-password-button {
+  font-size: 1.1vw;
   display: block;
-  margin-top: 2vw;
+  margin-top: 1vw;
+  padding: 1vw;
+  color: white;
+  background: #66aa9f;
+  border: none;
+  border-radius: 5vw;
   cursor: pointer;
+  outline: none;
+  text-align: center;
+}
+
+.change-password-button:hover {
+  box-shadow: 0 0 2vw rgba(0,0,0,0.4);
+}
+
+.change-password-button:focus {
+  outline: none;
+  background: #4d8c80;
 }

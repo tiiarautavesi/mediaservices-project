@@ -73,6 +73,9 @@ class Login extends React.Component {
           <NavLink to="/home" exact  className="login-button">Kirjaudu</NavLink>
         </form>
         <a className="login-issue" onClick={this.showModal}>
+          Unohditko salasanasi?
+        </a>
+        <a className="login-issue" onClick={this.showModal}>
           Minulla ei vielä ole tunnuksia OPPE:en
         </a>
         <NewUserInfo show={this.state.show} handleClose={this.hideModal} />
@@ -90,6 +93,20 @@ const NewUserInfo = ({handleClose, show}) => {
       <div className={showHideClassName}>
         <div className="close" onClick={handleClose}>x</div>
         Ihanaa, että olet kiinnostunut OPPE:sta! Ota yhteyttä oppilaitoksesi tietohallintoon, tai tilaa henkilökohtainen demo
+        <a target="_blank" href=""> tästä</a>.
+      </div>
+    </div>
+  );
+}
+
+const ForgottenPassword = ({handleClose, show}) => {
+  const showHideClassName = show ? 'new-user-info display-block' : 'new-user-info display-none';
+  return (
+    <div>
+      <div className={showHideClassName}>
+        <div className="close" onClick={handleClose}>x</div>
+        Kirjoita sähköposti osoitteesi alla olevaan kenttään ja lähetämme sinulle uuden salasanan
+        <input></input>
         <a target="_blank" href=""> tästä</a>.
       </div>
     </div>

@@ -2,6 +2,7 @@ import React, {
   Component
 } from 'react';
 import ReactDOM from 'react-dom';
+import { Link, NavLink} from 'react-router-dom';
 
 
 class AllMaterial extends React.Component {
@@ -16,7 +17,9 @@ class AllMaterial extends React.Component {
     
     return (
       <div className="home-section all-materials">
-        <h3 className="home-link all-materials-link" onChange={this.handleChange}>Kaikki materiaalit</h3>
+        <NavLink to="/all-material" exact>
+          <h3 className="home-link all-materials-link">Kaikki materiaalit</h3>
+        </NavLink>
         <div className="all-material-thumbnail thumbnail">
           <p className="all-material-name">Kansio 1</p>
         </div>

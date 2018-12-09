@@ -17,11 +17,20 @@ h3 {
 }
 
 footer {
-  position: absolute;
-  bottom: 2vw;
-  left: 30vw;
-  width: 40vw;
+  display: block;
+  width: 100vw;
+  padding-top: 3vw;
+  padding-bottom: 2vw;
   text-align: center;
   font-size: 1vw;
   opacity: 0.5;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
 }

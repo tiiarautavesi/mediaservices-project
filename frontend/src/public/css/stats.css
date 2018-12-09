@@ -13,8 +13,22 @@
   overflow-x: scroll;
 }
 
+.title-bar {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  margin: 1vw;
+  padding: 2vw 1vw 0vw 3vw;
+  border-radius: 2vw 2vw 0vw;
+  width: 93.1vw;
+  height: 4vw;
+  background-color: #ddfcff;
+}
+
+
 .stats-table {
   border-spacing: 0;
+  padding-top: 5vw;
 }
 
 tr {
@@ -151,11 +165,11 @@ td:nth-child(even) {
   text-decoration: underline;
 }
 
-.active {
+.active-item {
   z-index: 4;
 }
 
-.active:after {
+.active-item:after {
   content: '';
   width: 30vw;
   height: 4vw;

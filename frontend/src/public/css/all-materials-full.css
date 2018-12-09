@@ -1,0 +1,93 @@
+.all-materials-full {
+  background: #7dc9bb;
+  min-height: 100vw;
+}
+
+.all-materials-container {
+  padding: 0vw 3vw;
+}
+
+.materials-title {
+  text-align: center;
+}
+
+.material-selection {
+  text-align: center;
+}
+
+.all-materials-thumbnail,
+.mapa-thumbnail {
+  height: 10vw;
+  width: 15vw;
+  display: inline-block;
+  margin: 1.5vw;
+  cursor: pointer;
+}
+
+.mapa-thumbnail {
+  background: lightblue;
+  width: 17vw;
+  height: 12vw;
+  margin: 0vw 0vw 1vw 1vw;
+}
+
+.all-materials-thumbnail:hover,
+.mapa-thumbnail:hover {
+  text-decoration: underline;
+}
+
+.all-materials-thumbnail:nth-child(1) {
+  background: #b0b0ff;
+  box-shadow: 1vw -1vw #8383ff, 2vw -2vw #2e2eff;
+}
+
+.all-materials-thumbnail:nth-child(2) {
+  background: #ffc5f4;
+  box-shadow: 1vw -1vw #ff83ed, 2vw -2vw #ff29e1;
+}
+
+.all-materials-thumbnail:nth-child(3) {
+  background: #c1ff99;
+  box-shadow: 1vw -1vw #91e858, 2vw -2vw #51c605;
+}
+
+.all-materials-thumbnail:nth-child(4) {
+  background: #ffc5f4;
+  box-shadow: 1vw -1vw #ff83ed, 2vw -2vw #ff29e1;
+}
+
+.all-materials-thumbnail:nth-child(5) {
+  background: #c1ff99;
+  box-shadow: 1vw -1vw #91e858, 2vw -2vw #51c605;
+}
+
+.side-menu {
+  position: absolute;
+  right: 1vw;
+  bottom: 8vw;
+}
+
+.side-menu-item {
+  display: block;
+  width: 15vw;
+  padding: 1vw;
+  background-color: #ddfcff;
+  border-radius: 5vw;
+  margin-bottom: 1vw;
+}
+
+.search {
+  position: absolute;
+  right: 3vw;
+  top: 7vw;
+  width: 15vw;
+  padding: 1vw;
+  font-size: 1.4vw;
+  border-radius: 2vw;
+  border: none;
+  box-shadow: 0 0 1vw rgba(0,0,0,0.4);
+}
+
+.search:focus {
+  outline: none;
+}
