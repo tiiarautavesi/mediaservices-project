@@ -10,23 +10,83 @@ const courseList = [
   {
     courseid: 1,
     name: 'Geometria',
-    styleClass: 'course-name'
+    styleClass: 'course-name',
+    state: 'ended',
+    users: [
+      'Leo Tähti, ',
+      'Jaana Saastamoinen, ',
+      'Linnea Kuusisto, ',
+      'Kaija Koponen, ',
+      'Leena Manninen, ',
+      'Kirsi Kataja, ',
+      'Pekka Pouta, ',
+      'Minna Maaritsainen, ',
+      'Tanja Testinen'
+    ]
   }, {
     courseid: 2,
     name: 'Äidinkieli',
-    styleClass: 'course-name'
+    styleClass: 'course-name',
+    state: 'current',
+    users: [
+      'Leo Tähti, ',
+      'Jaana Saastamoinen, ',
+      'Linnea Kuusisto, ',
+      'Kaija Koponen, ',
+      'Leena Manninen, ',
+      'Kirsi Kataja, ',
+      'Pekka Pouta, ',
+      'Minna Maaritsainen, ',
+      'Tanja Testinen'
+    ]
   }, {
     courseid: 3,
     name: 'Ruotsi',
-    styleClass: 'course-name'
+    styleClass: 'course-name',
+    state: 'current',
+    users: [
+      'Leo Tähti, ',
+      'Jaana Saastamoinen, ',
+      'Linnea Kuusisto, ',
+      'Kaija Koponen, ',
+      'Leena Manninen, ',
+      'Kirsi Kataja, ',
+      'Pekka Pouta, ',
+      'Minna Maaritsainen, ',
+      'Tanja Testinen'
+    ]
   }, {
     courseid: 4,
     name: 'Äidinkieli',
-    styleClass: 'course-name'
+    styleClass: 'course-name',
+    state: 'ended',
+    users: [
+      'Leo Tähti, ',
+      'Jaana Saastamoinen, ',
+      'Linnea Kuusisto, ',
+      'Kaija Koponen, ',
+      'Leena Manninen, ',
+      'Kirsi Kataja, ',
+      'Pekka Pouta, ',
+      'Minna Maaritsainen, ',
+      'Tanja Testinen'
+    ]
   }, {
     courseid: 5,
     name: 'Ruotsi',
-    styleClass: 'course-name'
+    styleClass: 'course-name',
+    state: 'upcoming',
+    users: [
+      'Leo Tähti, ',
+      'Jaana Saastamoinen, ',
+      'Linnea Kuusisto, ',
+      'Kaija Koponen, ',
+      'Leena Manninen, ',
+      'Kirsi Kataja, ',
+      'Pekka Pouta, ',
+      'Minna Maaritsainen, ',
+      'Tanja Testinen'
+    ]
   }
 ]
 
@@ -60,12 +120,25 @@ class AllCourses extends React.Component {
     
     const listFiles = courseList.map(name => {
       return (
-        <NavLink to="/course" className={name.styleClass} key={name.courseid}>
-          <p>{name.name}</p>
-        </NavLink>
+        <div key={name.courseid} className={name.styleClass}>
+          
+          <NavLink to="/course" key={name.courseid}>
+            <p>{name.name}</p>
+          </NavLink>
+          
+          <div className="state-element">{name.state}</div>
+          
+          <div className="members-element" id={name.courseid}>{name.users.length}</div>
+          
+          <div className="usernames" id={name.courseid}>
+            {name.users}
+          </div>
+          
+        </div>
       )
     });
     
+    console.log(courseList);
     
     return (
       <div className="all-courses-full">
@@ -73,7 +146,20 @@ class AllCourses extends React.Component {
         <Menu />
         <input className="search" onChange={this.handleChange}></input>
         <div className="all-courses-container">
-          <h2 className="materials-title">Kurssit</h2>
+          
+          <select className="select-stats-scope">
+            <option value="own-courses" defaultValue>Omat kurssit</option>
+            <option value="all-courses">Kaikki kurssit</option>
+          </select>
+          
+          <h2 className="materials-title"></h2>
+          <select className="select-courses-scope">
+            <option value="all" defaultValue>Kaikki</option>
+            <option value="favorites">Suosikit</option>
+            <option value="current">Käynnissä olevat</option>
+            <option value="ended">Päättyneet</option>
+            <option value="upcoming">Tulossa</option>
+          </select>
           
           <div className="material-selection">
             {listFiles}

@@ -1,6 +1,79 @@
+.all-courses-container {
+  text-align: center;
+}
+
 .course-name {
   display: block;
   padding: 0.2vw;
-  border-bottom: solid 0.1vw #ccc;
+  border-top: solid 0.1vw #ccc;
+  position: relative;
+}
+
+.course-name:nth-child(even) {
+  background: #efefef;
+}
+
+.select-courses-scope {
+  margin-bottom: 3vw;
+  padding: 1vw;
+  font-size: 1.3vw;
+}
+
+.course-name a {
+  display: inline-block;
+  width: 30vw;
+  text-align: left;
   cursor: pointer;
+}
+
+.state-element,
+.members-element {
+  position: relative;
+  display: inline-block;
+  left: 10vw;
+  width: 10vw;
+}
+
+.members-element:before {
+  content: '\f0c0';
+  font-family: 'FontAwesome';
+  padding-right: 1vw;
+  cursor: pointer;
+}
+
+.members-element:hover:before {
+  color: green;
+}
+
+.usernames {
+  display: none;
+  position: absolute;
+  width: 30vw;
+  background: white;
+  top: 5vw;
+  left: 35vw;
+  z-index: 3;
+  padding: 2vw;
+  border: 0.3vw solid black;
+}
+
+.usernames:before {
+  content: '';
+  border-top: 0.3vw solid black;
+  position: absolute;
+  width: 14vw;
+  top: -0.3vw;
+  right: -14vw;
+}
+
+.usernames:after {
+  content: '\f013';
+  font-family: 'FontAwesome';
+  display: block;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.usernames:hover:after {
+  color: green;
 }
