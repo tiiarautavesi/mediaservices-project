@@ -4,13 +4,6 @@ import React, {
 import ReactDOM from 'react-dom';
 import { Link, NavLink } from 'react-router-dom';
 
-const menuItems = [
-  {
-    id: 1,
-    title: 'Kurssin nimi',
-    class: 'menu-item menu-course-name'
-  }
-]
 
 class Menu extends React.Component {
   constructor(props) {
@@ -19,13 +12,6 @@ class Menu extends React.Component {
 
   render() {
     
-    const listMenuItems = menuItems.map(title => {
-      return (
-        <div className={title.class} key={title.id}>
-          <p className="menu-title">{title.title}</p>
-        </div>
-      )
-    });
     
     return (
       <div className="menu">
@@ -44,7 +30,7 @@ class Menu extends React.Component {
             <NavLink to="/all-courses" exact className="menu-title">Kurssit</NavLink>
           </p>
         </div>
-        {listMenuItems}
+  
       </div>
     );
   }
