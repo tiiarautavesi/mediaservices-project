@@ -76,6 +76,10 @@
   margin-bottom: 1vw;
 }
 
+.side-menu-item:hover {
+  box-shadow: 0 0 1vw rgba(0,0,0,0.4);
+}
+
 .search {
   position: absolute;
   right: 3vw;

@@ -63,8 +63,13 @@ class SelectedCourse extends React.Component {
             </div>
           </div>
         </div>
+        
         <button className="addItem">+</button>
+        
         <NavLink to="/coursestats" exact className="statsButton"></NavLink>
+        
+        <NavLink to="/course-specific-users" exact className="membersButton"></NavLink>
+        
       </div>
     );
   }

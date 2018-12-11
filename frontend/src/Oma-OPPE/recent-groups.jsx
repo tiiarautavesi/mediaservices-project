@@ -17,7 +17,11 @@ class RecentGroups extends React.Component {
     
     return (
       <div className="home-section recent-groups">
-        <h3 className="home-link recent-groups-link">Viimeisimmät kurssit</h3>
+        
+        <NavLink to="/all-courses" exact>
+          <h3 className="home-link all-materials-link">Kurssit</h3>
+        </NavLink>
+        
         <div className="recent-group-link">
           <NavLink to="/course" exact className="recent-group-name">Course Name 1</NavLink>
         </div>
@@ -28,7 +32,11 @@ class RecentGroups extends React.Component {
           <NavLink to="/course" exact className="recent-group-name">Course Name 3</NavLink>
         </div>
         <br />
-        <button className="create-button">Luo uusi kurssi</button>
+        
+        <NavLink to="/create-course" exact>
+          <button className="create-button">Luo uusi kurssi</button>
+        </NavLink>
+        
       </div>
     );
   }

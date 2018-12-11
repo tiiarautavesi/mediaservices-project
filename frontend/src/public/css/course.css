@@ -1,5 +1,6 @@
 .selected-course {
   padding-left: 2vw;
+  min-height: 40vw;
 }
 
 .folder-selection,
@@ -83,7 +84,8 @@
   background: #b4ede5;
 }
 
-.statsButton {
+.statsButton,
+.membersButton {
   position: absolute;
   top: 7vw;
   right: 2vw;
@@ -97,9 +99,22 @@
   line-height: 6vw;
 }
 
+.membersButton {
+  position: absolute;
+  top: 7vw;
+  right: 10vw;
+}
+
 .statsButton:after {
   font-family: "FontAwesome";
   content: '\f080';
+  color: white;
+  font-size: 3vw;
+}
+
+.membersButton:after {
+  content: '\f0c0';
+  font-family: "FontAwesome";
   color: white;
   font-size: 3vw;
 }

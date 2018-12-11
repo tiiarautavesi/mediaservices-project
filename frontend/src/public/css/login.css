@@ -1,5 +1,4 @@
 .login-form {
-  overflow: hidden;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -42,7 +41,7 @@
 }
 
 .login-button:hover {
-  box-shadow: 0 0 2vw rgba(0,0,0,0.4);
+  box-shadow: 0 0 2vw rgba(0, 0, 0, 0.4);
 }
 
 .login-button:focus {
@@ -69,7 +68,7 @@
   width: 40vw;
   padding: 2vw;
   border-radius: 2vw;
-  box-shadow: 0 0 3vw rgba(0,0,0,0.4);
+  box-shadow: 0 0 3vw rgba(0, 0, 0, 0.4);
 }
 
 .display-none {
@@ -90,5 +89,5 @@
 }
 
 .close:hover {
-  box-shadow: 0 0 1vw rgba(0,0,0,0.5);
+  box-shadow: 0 0 1vw rgba(0, 0, 0, 0.5);
 }

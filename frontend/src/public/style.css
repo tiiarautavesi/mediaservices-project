@@ -18,7 +18,8 @@ h3 {
 
 footer {
   display: block;
-  width: 100vw;
+  width: 20vw;
+  margin: auto;
   padding-top: 3vw;
   padding-bottom: 2vw;
   text-align: center;

@@ -8,7 +8,8 @@ import CourseStats from './Oma-OPPE/course-stats.jsx';
 import SelectedCourse from './Oma-OPPE/selected-course.jsx';
 import UserSettings from './Oma-OPPE/user-settings.jsx';
 import AllMaterial from './Oma-OPPE/all-material-full.jsx';
-import AllCourses from './Oma-OPPE/all-courses.jsx'
+import AllCourses from './Oma-OPPE/all-courses.jsx';
+import CreateCourse from './Oma-OPPE/create-course.jsx';
 
 
 
@@ -50,6 +51,10 @@ class App extends React.Component {
           
           <Route path="/all-courses" exact strict render={()=>(
             <AllCourses />
+          )}/>
+          
+          <Route path="/create-course" exact strict render={()=>(
+            <CreateCourse />
           )}/>
 
         </div>

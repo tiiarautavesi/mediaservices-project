@@ -111,7 +111,7 @@ class AllMaterialsFull extends React.Component {
             {listFiles}
             {listMapas}
           </div>
-          {!this.state.isHidden && <NewUserInfo />}
+          {!this.state.isHidden && <CreateItems />}
           <button className="addItem" onClick={this.toggleHidden.bind(this)}>+</button>
           
         </div>
@@ -120,7 +120,7 @@ class AllMaterialsFull extends React.Component {
   }
 }
 
-const NewUserInfo = () => {
+const CreateItems = () => {
   return (
     <div>
       <div className="side-menu">
